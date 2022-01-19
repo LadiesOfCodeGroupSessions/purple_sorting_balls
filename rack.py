@@ -1,7 +1,6 @@
 class Rack:
     rack = []
     
-
     def add(self, ball):
         self.rack.append(10)
     
