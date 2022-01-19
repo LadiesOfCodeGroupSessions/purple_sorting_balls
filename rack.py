@@ -5,4 +5,5 @@ class Rack:
         self.rack.append(ball)
     
     def balls(self):
+        self.rack.sort()
         return self.rack
