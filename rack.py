@@ -1,5 +1,9 @@
 class Rack:
     rack = []
+    
 
     def add(self, ball):
-        pass
+        self.rack.append(10)
+    
+    def balls(self):
+        return self.rack
