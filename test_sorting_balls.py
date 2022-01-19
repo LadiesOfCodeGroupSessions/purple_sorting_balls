@@ -8,3 +8,4 @@ def test_rack():
     rack.add(30)
 
     assert rack.balls() == [10, 20, 30]
+

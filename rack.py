@@ -5,13 +5,17 @@ class Rack:
         self.rack.append(ball)
     
     def balls(self):
-        rack = self.sort(self.rack)
+        self.sort()
         return self.rack
 
-    def sort(self, rack):
+    def sort(self):
         for i in range(0, (len(self.rack)-1)):
-            if self.rack[i] < self.rack[i+1]:
-                pass
+            if self.rack[i] > self.rack[i+1]:
+                temp = self.rack[i]
+                self.rack[i] = self.rack[i+1]
+                self.rack[i] = temp
+        print(self.rack.balls())
+                
 
         return rack
 
